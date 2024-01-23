@@ -9,4 +9,4 @@ git add .
 git commit -m "second commit"
 git branch -M main
 git remote add origin https://github.com/RawanSadeq5/WebCalculator.git
-git push -f origin main
+git push -u origin main

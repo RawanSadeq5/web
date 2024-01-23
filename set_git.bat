@@ -6,7 +6,7 @@
 
 git init
 git add .
-git commit -m "first commit"
+git commit -m "second commit"
 git branch -M main
 git remote add origin https://github.com/RawanSadeq5/WebCalculator.git
-git push -u -f origin main
+git push -f origin main

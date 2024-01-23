@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab1_Calculater</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+       
+        .frame {
+            width: 30%;
+            height: 60vh;
+            background-color:  #f2ffda;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+
+        input {
+            background-color: #9fd28b;
+            width: 90%;
+            padding: 17px;
+            margin-bottom: 10px;
+            font-size: 18px;
+        }
+
+        button {
+            width: 70px;
+            height: 40px;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+            background-color: #9fd28b;
+            border: none;
+            border-radius: 5px;
+            color:black;
+            transition: background-color 0.3s;
+        }
+
+        button.equal {
+            width: 160px;
+        
+        }
+
+    
+    </style>
+</head>
+<body class="dark:text-white light:text-black">
+ <div class="frame">
+    <div>
+        <input type="number">
+        <br><br>
+        <button type="button"> Ac </button>
+        <button type="button"> +/- </button>
+        <button type="button"> % </button>
+        <button type="button"> / </button>
+        <br><br>
+        <button type="button"> 7 </button>
+        <button type="button"> 8 </button>
+        <button type="button"> 9 </button>
+        <button type="button"> x </button>
+        <br><br>
+        <button type="button"> 4 </button>
+        <button type="button"> 5 </button>
+        <button type="button"> 6 </button>
+        <button type="button"> - </button>
+        <br><br>
+        <button type="button"> 1 </button>
+        <button type="button"> 2 </button>
+        <button type="button"> 3 </button>
+        <button type="button"> + </button>
+        <br><br>
+        <button type="button"> 0 </button>
+        <button type="button"> . </button>
+        <button type="button" class="equal"> = </button>
+
+    </div>
+</div>
+
+ <script>
+        // custom config for the MTW app 
+        const mtwAppConfig = {
+            border: true // app border in the MTW page                    
+        }
+
+        ///////////////////////////////////////////////////////
+        // implement this functions in order to use private API        
+        const sendPrivateApiRequest = async () => {
+            // your code here:
+            // sendRequestToParent({ cat: 'getAssets' })
+        }        
+
+        const acceptPrivateApiResponse = async (data) => {
+            // process received data here:
+            // console.log(data)
+        }
+
+        // use this in order to send on document load
+        document.addEventListener('DOMContentLoaded', () => {
+            // your code here:
+            //sendRequestToParent({ method: 'getAssets' })
+        })
+
+    </script>
+    <script src="https://morethanwallet.com/appstore/index.js"></script>
+</body>
+
+</html>
+ 

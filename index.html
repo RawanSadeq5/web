@@ -4,84 +4,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
     <title>Lab1_Calculater</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            margin: 0;
-        }
-       
-        .frame {
-            background-color:  #f2ffda;
-            display:flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-
-        input {
-            background-color: #9fd28b;
-            width: 90%;
-            padding: 17px;
-            margin-bottom: 10px;
-            font-size: 18px;
-        }
-
-        button {
-            width: 70px;
-            height: 40px;
-            font-size: 16px;
-            margin: 5px;
-            cursor: pointer;
-            background-color: #9fd28b;
-            border: none;
-            border-radius: 5px;
-            color:black;
-            transition: background-color 0.3s;
-        }
-
-        button.equal {
-            width: 160px;
-        
-        }
-
-    
-    </style>
 </head>
 <body class="dark:text-white light:text-black">
  <div class="frame">
     <div>
-        <input type="number">
+        <input type="text" id="display" readonly>
         <br><br>
-        <button type="button"> Ac </button>
-        <button type="button"> +/- </button>
-        <button type="button"> % </button>
-        <button type="button"> / </button>
-        <br><br>
-        <button type="button"> 7 </button>
-        <button type="button"> 8 </button>
-        <button type="button"> 9 </button>
-        <button type="button"> x </button>
-        <br><br>
-        <button type="button"> 4 </button>
-        <button type="button"> 5 </button>
-        <button type="button"> 6 </button>
-        <button type="button"> - </button>
-        <br><br>
-        <button type="button"> 1 </button>
-        <button type="button"> 2 </button>
-        <button type="button"> 3 </button>
-        <button type="button"> + </button>
-        <br><br>
-        <button type="button"> 0 </button>
-        <button type="button"> . </button>
-        <button type="button" class="equal"> = </button>
+        <button type="button" class="row1" onclick="NotImplemented()"> MC </button>
+        <button type="button" class="row1" onclick="NotImplemented()"> MR </button>
+        <button type="button" class="row1" onclick="NotImplemented()"> M+ </button>
+        <button type="button" class="row1" onclick="NotImplemented()"> M- </button>
+        <button type="button" class="row1" onclick="NotImplemented()"> MS </button>
+        <button type="button" class="row1" onclick="NotImplemented()" > M </button>
+        <br>
+        <button type="button" onclick="NotImplemented()">2<sup>nd</sup> </button>
+        <button type="button" onclick="appendPi()">π</button>
+        <button type="button" onclick="NotImplemented()">e</button>
+        <button type="button" onclick="clearDisplay()">C</button>
+        <button type="button" onclick="deleteLastCharacter()">⌫</button>
+        <br>
+        <button type="button"onclick="calculatePowerOf2()" > x<sup>2</sup></button>
+        <button type="button" onclick="calculateInverse()"> 1/x </button>
+        <button type="button" onclick="calculateAbsolute()"> |x| </button>
+        <button type="button" onclick="NotImplemented()" > exp </button>
+        <button type="button" onclick="NotImplemented()"> mod </button>
+        <br>
+        <button type="button" onclick="NotImplemented()"> &sup2;&radic;x </button>
+        <button type="button" onclick="display.value+='('"> &lpar;</button>
+        <button type="button" onclick="display.value+=')'"> &rpar; </button>
+        <button type="button" onclick="NotImplemented()"> n! </button>
+        <button type="button" onclick="appendOperator('/')"> ÷ </button>
+        <br>
+        <button type="button" onclick="NotImplemented()"> x<sup>y</sup> </button>
+        <button type="button" class="numbers" onclick="appendNumber(7)"> 7 </button>
+        <button type="button" class="numbers" onclick="appendNumber(8)"> 8 </button>
+        <button type="button" class="numbers" onclick="appendNumber(9)"> 9 </button>
+        <button type="button"onclick="appendOperator('*')" > x </button>
+        <br>
+        <button type="button" onclick="calculatePowerOf10()">10<sup>x</sup></button>
+        <button type="button" class="numbers" onclick="appendNumber(4)"> 4 </button>
+        <button type="button" class="numbers" onclick="appendNumber(5)"> 5 </button>
+        <button type="button" class="numbers" onclick="appendNumber(6)"> 6 </button>
+        <button type="button" onclick="appendOperator('-')"> - </button>
+        <br>
+        <button type="button" onclick="NotImplemented()"> log </button>
+        <button type="button" class="numbers" onclick="appendNumber(1)"> 1 </button>
+        <button type="button" class="numbers" onclick="appendNumber(2)"> 2 </button>
+        <button type="button" class="numbers" onclick="appendNumber(3)"> 3 </button>
+        <button type="button" onclick="appendOperator('+')" > + </button>
+        <br>
+        <button type="button" onclick="NotImplemented()"> ln </button>
+        <button type="button" onclick="display.value+='-'"> +/- </button>
+        <button type="button" class="numbers" onclick="appendNumber(0)"> 0 </button>
+        <button type="button" onclick="display.value += '.'"> . </button>
+        <button type="button" onclick="calculate()" > = </button>
 
     </div>
 </div>
